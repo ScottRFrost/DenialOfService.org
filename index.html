@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<title>PonyvilleFM.com (Mane Steam 320kbit) | DenialOfService.Org</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular" type="text/css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/vader/jquery-ui.min.css" type="text/css">
+<style type="text/css">
+body {
+	background:#111111;
+	padding:0;
+	margin:0;
+	font: 16px "Roboto",Arial,Tahoma,verdana,sans-serif;
+}
+#container {
+	width:100%;
+	max-width:480px;
+	margin:0 auto;
+}
+#play, #pause, #volume {
+	float: left;
+}
+#play, #pause {
+	width: 120px;
+	margin: 0.1em 0.25em 0.25em 0;
+}
+#volume-container {
+	float: right;
+	width: 230px;
+	text-align: center;
+	color: white;
+}
+#volume {
+	width: 100%;
+}
+#playlist {
+	background-color:#272727;
+	list-style-type:none;
+	padding:5px 0;
+	clear:both;
+	border: 1px solid #CCCCCC;
+	border-radius:5px;
+}
+.active a, li a:hover {
+	color:white;
+	text-decoration:none;
+}
+li a {
+	color:#999;
+	margin:5px 0 10px;
+	display:block;
+	text-align:center;
+	text-decoration:none;
+}
+</style>
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAkkkAAJJJAAD//wAAnkkAAJ5JAAD//wAA/kkAAP5JAAD//wAA/nkAAP55AAD//wAA//kAAP/5AAD//wAA" rel="icon" type="image/x-icon">
+</head>
+<body>
+<div id="container">
+        <audio id="audio" preload="auto" tabindex="0" src="http://208.113.165.40:8000/streamhq.mp3">
+                <source type="audio/mp3" src="http://208.113.165.40:8000/streamhq.mp3">Your browser does not support HTML5 audio.
+        </audio>
+		<button id="play" class="ui-button ui-corner-all ui-widget">Play <span class="ui-icon ui-icon-play"></span></button> 
+		<button id="pause" class="ui-button ui-corner-all ui-widget">Pause <span class="ui-icon ui-icon-pause"></span></button>
+		<div id="volume-container">
+			Volume<br>
+			<div id="volume" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 7%;"></span></div>
+		</div>
+        <ul id="playlist">
+                <li class=""><a href="http://radio.afterhoursdjs.org:8000/;">AfterHoursDJs.org</a></li>
+                <li><a href="http://46.28.49.164:7145/;">Bedroom-DJ.co.uk UK</a></li>
+                <li><a href="http://188.165.1.47:8002/;">RaversParadise.co.uk</a></li>
+                <li><a href="http://stream.eilo.org:8000/happycore">Eilo.org Happy Hardcore</a></li>
+                <li><a href="http://198.154.106.103:8370/;">UKast-FM</a></li>
+                <li><a href="http://149.202.90.221:8016/stream;">Toxic Sickness</a></li>
+                <li><a href="http://stream.nightcoreradio.com:9040/main_stream">NightCoreRadio.com</a></li>
+                <li><a href="http://src.shoutcaststream.com:8022/;">HardcorePower.nl</a></li>
+                <li><a href="http://stream.electricfm.com:80/;">ElectricFM.com</a></li>
+                <li><a href="http://173.192.207.51:8062/;">1DanceFM.com</a></li>
+                <li><a href="http://stream2.rhr.fm/;">Real Hardstyle Radio</a></li>
+		<li><a href="http://hhuk.netmindz.net:8000/;">HardHouseUK.net</a></li>
+		<li><a href="http://load.hardstyle.nu:443/;">Hardstyle.Nu Hardstyle</a></li>
+		<li><a href="http://bigbrother.dinmamma.be:80/;">NERadio.se Sweden</a></li>
+		<li><a href="http://stream01.platform02.true.nl:8000/qdance-hard">Q-Dance.com</a></li>
+		<li><a href="http://source.dnbradio.com:8000/dnbradio_main.mp3">DnBRadio.com</a></li>
+		<li><a href="http://source.dnbradio.com:8000/dnbradio_darksetp.mp3">DnBRadio.com - Darkstep Channel</a></li>
+                <li><a href="http://46.165.203.195:8000/;">Techno4Ever.fm Hardcore (ads)</a></li>
+                <li><a href="http://u4.happyhardcore.com:7762">HappyHardcore.com (ads)</a></li>
+                <li><a href="http://95.141.24.202:80/;">RauteMusick.fm Happy Hardcore (ads)</a></li>
+                <li><a href="http://streaming.radionomy.com/Absolute-Hardstyle-Radio">Absolute Hardstyle Radio (ads)</a></li>
+                <li><a href="http://208.113.165.40:8000/stream.mp3/;">PonyvilleFM.com (Mane Stream)</a></li>
+		<li class="active"><a href="http://208.113.165.40:8000/streamhq.mp3">PonyvilleFM.com (Mane Steam 320kbit)</a></li>
+		<li><a href="http://208.113.165.40:8000/pvfm1.ogg">PonyvilleFM.com (Mane Steam Ogg Vorbis)</a></li>
+		<li><a href="http://208.113.165.40:8000/pvfmfree.ogg">PonyvilleFM.com 3 (Uninterrupted Ogg Vorbis)</a></li>
+        </ul>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript">
+if (window.location.protocol != "https:")
+        window.location.href = "https://all.these.russian.hackers.keep.trying.to.denialofservice.org";
+
+$(document).ready(function() {
+    var audio;
+    var playlist;
+    var tracks;
+    var current;
+
+	function init() {
+        current = 0;
+        audio = $('audio');
+        playlist = $('#playlist');
+        tracks = playlist.find('li a');
+        len = tracks.length - 1;
+        audio[0].volume = .10;
+        audio[0].play();
+        playlist.find('a').click(function (e) {
+            e.preventDefault();
+            link = $(this);
+            current = link.parent().index();
+            run(link, audio[0]);
+        });
+        audio[0].addEventListener('ended', function (e) {
+            current++;
+            if (current == len) {
+                current = 0;
+                link = playlist.find('a')[0];
+            } else {
+                link = playlist.find('a')[current];
+            }
+            run($(link), audio[0]);
+        });
+    }
+    
+    function run(link, player) {
+        player.src = link.attr('href');
+        $(document).prop('title', link.html() + ' | DenialOfService.Org');
+        par = link.parent();
+        par.addClass('active').siblings().removeClass('active');
+        audio[0].load();
+        audio[0].play();
+    }
+    
+	$("button").button();
+	$("button").bind('mouseup', function() {
+			$(this).blur();
+	});
+	
+	$('#play').click(function() {
+		audio[0].play();
+		$('#volume').focus();
+	});
+	
+	$('#pause').click(function() {
+		audio[0].pause();
+		$('#volume').focus();
+	});
+	
+	$('#volume').slider({
+      min: 0,
+      max: 100,
+      value: 20,
+      slide: function( event, ui ) {
+		audio[0].volume = ui.value/100;
+      }
+    });
+	
+    init();
+	
+	$( document ).tooltip({
+      track: true
+    });
+    
+	$('#play').trigger('click');
+	
+    //$('#playlist').first('a').click();
+});
+</script>
+</body>
+</html>
